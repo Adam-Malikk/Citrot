@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: pink;
+    font-family: 'Kalam', cursive;}
+
+.container {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% dari tinggi viewport */
+    padding: 20px;
+  }
+
+  .content {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #3498db; /* Warna latar belakang konten */
+    color: #ffffff; /* Warna teks pada konten agar terlihat jelas di atas latar biru */
+    max-width: 500px; /* Lebar maksimum konten */
+    width: 80%; /* Lebar 100% untuk responsif */
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+ .pentol{
+    height: 70%;
+    width: 50%;
+}
+
+h3{
+    font-size: 35px;
+    margin-top: 0px; /* Menambahkan margin di atas paragraf */
+    margin-bottom: 1px; /* Menambahkan margin di bawah paragraf */
+}
+
+p{
+    margin-top: 10px; /* Menambahkan margin di atas paragraf */
+    margin-bottom: 8px; /* Menambahkan margin di bawah paragraf */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2079b4;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  .button1{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2079b4;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .button:hover {
+    background-color: #188ad6;
+  }
+
+  .button1:hover {
+    background-color: #188ad6;
+  }
+  
+  .moved {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+      
+  .typewriter {
+    text-align: center;
+  }
+  
+  #typed-text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid pink; /* Garis imitasi kursor */
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0;
+    animation: typing 2.5s steps(40);
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } 
+
+  .bubble {
+    z-index: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0; /* Initial opacity set to 0 */
+  }
+  
+  .bubble.animate {
+    animation: bubbleUp 2s ease-in-out infinite;
+  }
+  
+  @keyframes bubbleUp {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+  }
+  
